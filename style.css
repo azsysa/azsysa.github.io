@@ -1,0 +1,281 @@
+html {
+    margin: 0;
+    padding: 0;
+    background: #111111;
+    overflow-y: scroll;
+
+    scroll-behavior: smooth;
+    color: rgb(199, 197, 197);
+    font-family: 'Courier Prime', monospace;
+    
+    
+}
+
+
+html::-webkit-scrollbar {
+    display: none;
+}
+
+
+
+#intro {
+    width: 100vw;
+    height: 100vh;
+}
+
+#intro h1 {
+    font-family: 'Courier Prime', monospace;
+    color: rgb(199, 197, 197);
+    text-align: center;
+}
+
+#intro .btn {
+   text-align: center;   
+}
+
+#intro a {
+    padding-left: 13px;
+}
+
+#intro h2 {
+
+font-family: 'Courier Prime', monospace;
+color: rgb(199, 197, 197);
+transition: ease 2s;
+}
+
+#intro h2 > a {
+    color: rgb(199, 197, 197);
+    text-decoration: none;
+    opacity: 0.3;
+}
+
+
+#intro h2:hover {
+    letter-spacing: 5px;
+   
+}
+
+#about i {padding-left: 10px;}
+#about p > a {
+    cursor: pointer;
+}
+
+#ajim img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    transition: ease 2s;
+    opacity: 0.7;
+    animation-name: glitch-img;
+    animation-duration: 3s;
+    animation-delay: 0.5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+    -webkit-animation-name: glitch-img;
+    -webkit-animation-duration: 3s;
+    -webkit-animation-delay: 0.5s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-direction: alternate-reverse;
+}
+
+
+
+
+#about {
+    width: 100vw;
+    height: 100vh;
+  
+    padding-top: 10%;
+}
+#about h1 {
+    font-family: 'Courier Prime', monospace;
+    color: rgb(199, 197, 197);
+   
+}
+.intro {
+    position: relative;
+    overflow: hidden;
+}
+.glitch {
+    position: relative;
+    overflow: hidden;
+    height: 60vh;
+}
+.glitch_img {
+    opacity: 0.3;
+    background: url("img/jimbo.jpeg") no-repeat;
+    background-size: contain;
+    background-position: center;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    animation-name: glitch-img;
+    animation-duration: 3s;
+    animation-delay: 0.5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+    -webkit-animation-name: glitch-img;
+    -webkit-animation-duration: 3s;
+    -webkit-animation-delay: 0.5s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-direction: alternate-reverse;
+}
+@keyframes glitch-img {
+    0% {filter:blur(0px)}
+    1% {filter:blur(10px)}
+    3% {filter:contrast(30px)}
+    5% {filter:blur(1px)}
+    50% {filter:blur(0px)}
+    51% {filter:blur(10px)}
+    52% {filter:blur(0px)}
+    100% {filter:blur(0px)}
+}
+@-webkit-keyframes glitch-img {
+    0% {filter:blur(0px)}
+    1% {filter:blur(10px)}
+    3% {filter:blur(30px)}
+    5% {filter:blur(1px)}
+    50% {filter:blur(0px)}
+    51% {filter:blur(10px)}
+    52% {filter:blur(0px)}
+    100% {filter:blur(0px)}
+}
+
+#port {
+   
+    padding-top: 10%;
+}
+#port span {
+    margin-left: 10px;
+    margin-top:10px;
+}
+
+#port h1 {
+    text-align: center;
+  
+    font-family: 'Courier Prime', monospace;
+    color: rgb(199, 197, 197);
+   
+}
+#port h3{
+    font-family: 'Courier Prime', monospace;
+    color: rgb(199, 197, 197);
+}
+#port a {
+    color:grey;
+    text-decoration: none;
+}
+
+#port p {
+    color: grey;
+}
+#port a:hover {
+    color:#1e87f0;
+    
+}
+
+#other {
+    width: 100vw;
+    height: 100vh;
+    padding-top: 10%;
+}
+#other h1 {
+color: rgba(255,255,255,.75);
+font-size: 70px;   
+font-family: 'Courier Prime', monospace;
+}
+
+#other .bot {
+    text-align: center;
+    margin-top: 10%;
+}
+
+#other .uk-card:hover  {
+    background: #1e87f0 no-repeat;
+}
+
+
+#curry {
+    animation-name: glitch-img;
+    animation-duration: 3s;
+    animation-delay: 0.5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+    -webkit-animation-name: glitch-img;
+    -webkit-animation-duration: 3s;
+    -webkit-animation-delay: 0.5s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-direction: alternate-reverse;
+}
+
+
+/*typewritter*/
+.line-1{
+    position: relative;
+    top: 50%;  
+    width: 24em;
+    margin: 0 auto;
+    border-right: 2px solid rgba(255,255,255,.75);
+    font-size: 22px;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    transform: translateY(-50%);    
+}
+.anim-typewriter{
+    animation: typewriter 4s steps(44) 1s 1 normal both,
+               blinkTextCursor 500ms steps(44) infinite normal;
+  }
+  @keyframes typewriter{
+    from{width: 0;}
+    to{width: 23em;}
+  }
+  @keyframes blinkTextCursor{
+    from{border-right-color: rgba(255,255,255,.75);}
+    to{border-right-color: transparent;}
+  }
+  
+  @media only screen and (max-width: 600px) {
+    
+    #ajim{
+        width: 200px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 20px;
+    }
+   #intro h2{text-align: center;}
+    .uk-dotnav{display: none;}
+    
+    #intro p{font-size: 12px;}
+    #about {
+       display: block;
+       margin-left: auto;
+       margin-right: auto;
+    }
+    #about .uk-grid-large p {font-size: 12px;}
+    
+    #other h1{font-size: 20px;}
+    
+  }
+
+  .hover-me {
+  
+  }
+  .hover-me img {
+    position:absolute;
+    display:none !important;
+    border-radius:4px;
+    box-shadow: 1px 2px 3px rgba(0,0,0,0.9);
+    width: 200px;
+  }
+  
+  .hover-me:hover img {
+    display:block !important;
+      
+  }
+ 
